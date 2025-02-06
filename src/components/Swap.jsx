@@ -10,6 +10,7 @@ const Swap = () => {
     const [ethAmount, setEthAmount] = useState("");
     const [solAmount, setSolAmount] = useState("");
     const [isOneToOne, setIsOneToOne] = useState(true);
+    const [solanaAddress, setSolanaAddress] = useState("");
 
     const handleSwap = () => {
         setIsSwapped(!isSwapped);
@@ -36,6 +37,10 @@ const Swap = () => {
             }
         }
     };
+
+    const handleSolanaAddress = (e) => {
+        setSolanaAddress(e.target.value);
+    }
 
     return (
         <div className="container min-h-screen p-2 md:p-0">
@@ -141,7 +146,10 @@ const Swap = () => {
                     type="text"
                     placeholder="Enter Solana Address"
                     className="mt-10 px-4 py-2 rounded-3xl bg-gray-700 outline-none text-white border-[1px]"
+                    value={solanaAddress}
+                    onChange={handleSolanaAddress}
                 />
+                
 
                 <button
                     className="mt-10 py-3 w-full text-white mx-auto rounded-3xl text-lg bg-blue-600 font-semibold hover:bg-blue-700"
