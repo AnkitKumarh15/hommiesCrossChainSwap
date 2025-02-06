@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { ethers } from "ethers";
 import toast, { Toaster } from 'react-hot-toast';
+import Link from "next/link";
 
 const Navbar = () => {
     const [account, setAccount] = useState(null);
@@ -27,11 +28,13 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-blue-950">
+        <div className="bg-gray-800">
             <div className="container py-3 px-2 md:px-20 text-xl flex justify-between text-white items-center">
+                <Link href={'/'}>
                 <h1 className="text-center text-white text-lg md:text-2xl font-medium" style={{ fontFamily: "poppins" }}>
                     Hommies <span className="text-gray-400 font-bold">Swap</span>
                 </h1>
+                </Link>
 
                 {account ? (
                     <div className="flex items-center gap-4">
