@@ -38,7 +38,7 @@ const Swap = () => {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="container min-h-screen p-2 md:p-0">
             <h1 className="pt-10 text-center text-4xl font-bold" style={{ fontFamily: "poppins" }}>Swap Cross Chain</h1>
             <div className="bg-gray-700 p-5 md:py-8 md:px-8 mx-auto mt-10 rounded-3xl shadow-lg max-w-[550px] flex flex-col justify-center">
                 <div>
@@ -56,10 +56,10 @@ const Swap = () => {
                                             className="text-gray-200 bg-gray-700 max-w-[100px] p-2 rounded-2xl flex items-center outline-none"
                                         />
 
-                                        <div className="flex m-4 gap-x-2 items-center bg-black text-white px-4 py-2 rounded-3xl">
+                                        <div className="flex mx-2 my-4 md:m-4 gap-x-2 items-center bg-black text-white px-2 md:px-4 md:py-2 rounded-3xl">
                                             <Image src={eth} alt="" className="w-8" />
                                             <div className="flex flex-col">
-                                                <h1 className="font-semibold" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
+                                                <h1 className="font-semibold text-sm md:text-base" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
                                                 <h1 className="font-semibold text-center text-xs" style={{ fontFamily: 'open_sans' }}>ETH</h1>
                                             </div>
                                         </div>
@@ -78,10 +78,10 @@ const Swap = () => {
                                             readOnly
                                         />
 
-                                        <div className="flex m-4 gap-x-2 items-center bg-black text-white px-4 py-2 rounded-3xl">
+                                        <div className="flex mx-2 my-4 md:m-4 gap-x-2 items-center bg-black text-white px-2 py-0 md:px-4 md:py-2 rounded-3xl">
                                             <Image src={sol} alt="" className="w-8 bporder-[1px] bg-blue-500 rounded-full" />
                                             <div className="flex flex-col">
-                                                <h1 className="font-semibold" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
+                                                <h1 className="font-semibold text-sm md:text-base" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
                                                 <h1 className="font-semibold text-center text-xs" style={{ fontFamily: 'open_sans' }}>SOL</h1>
                                             </div>
                                         </div>
@@ -101,10 +101,10 @@ const Swap = () => {
                                             className="text-gray-200 bg-gray-700 max-w-[100px] p-2 rounded-2xl flex items-center outline-none"
                                         />
 
-                                        <div className="flex m-4 gap-x-2 items-center bg-black text-white px-4 py-2 rounded-3xl">
+                                        <div className="flex mx-2 my-4 md:m-4 gap-x-2 items-center bg-black text-white px-2 py-0 md:px-4 md:py-2 rounded-3xl">
                                             <Image src={sol} alt="" className="w-8 bporder-[1px] bg-blue-500 rounded-full" />
                                             <div className="flex flex-col">
-                                                <h1 className="font-semibold" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
+                                                <h1 className="font-semibold text-sm md:text-base" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
                                                 <h1 className="font-semibold text-center text-xs" style={{ fontFamily: 'open_sans' }}>SOL</h1>
                                             </div>
                                         </div>
@@ -124,10 +124,10 @@ const Swap = () => {
                                             readOnly
                                         />
 
-                                        <div className="flex m-4 gap-x-2 items-center bg-black text-white px-4 py-2 rounded-3xl">
+                                        <div className="flex mx-2 my-4 md:m-4 gap-x-2 items-center bg-black text-white px-2 py-0 md:px-4 md:py-2 rounded-3xl">
                                             <Image src={eth} alt="" className="w-8" />
                                             <div className="flex flex-col">
-                                                <h1 className="font-semibold" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
+                                                <h1 className="font-semibold text-sm md:text-base" style={{ fontFamily: 'open_sans' }}>HOMMIES</h1>
                                                 <h1 className="font-semibold text-center text-xs" style={{ fontFamily: 'open_sans' }}>ETH</h1>
                                             </div>
                                         </div>
