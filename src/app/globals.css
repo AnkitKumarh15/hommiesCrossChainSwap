@@ -7,15 +7,31 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@font-face{
+  font-family: 'poppins';
+  src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url(../Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'play';
+  src: url(../Fonts/Play/Play-Regular.ttf);
 }
