@@ -1,11 +1,16 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Image from "next/image";
 import eth from '../../public/ETH.png';
 import sol from '../../public/SOL.png';
 import convert from '../../public/convert.png';
+import { WalletContext } from "./ConnectWallet/WalletContext"
+
+
 
 const Swap = () => {
+    const { account, connectWallet, disconnectWallet } = useContext(WalletContext);
+
     const [isSwapped, setIsSwapped] = useState(false);
     const [ethAmount, setEthAmount] = useState("");
     const [solAmount, setSolAmount] = useState("");
@@ -149,7 +154,7 @@ const Swap = () => {
                     value={solanaAddress}
                     onChange={handleSolanaAddress}
                 />
-                
+
 
                 <button
                     className="mt-10 py-3 w-full text-white mx-auto rounded-3xl text-lg bg-blue-600 font-semibold hover:bg-blue-700"
@@ -158,6 +163,14 @@ const Swap = () => {
                 >
                     SWAP
                 </button>
+
+                { account && (
+                    <span className="bg-gray-500 px-4 py-2 text-base font-semibold rounded-xl">
+                    {account.slice(0, 6)}...{account.slice(-4)}
+                </span>)
+                }
+                
+                
 
             </div>
         </div>

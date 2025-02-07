@@ -24,7 +24,7 @@ function Footer() {
 
             </div>
             <div className="text-center text-gray-500 text-sm py-4 border-t border-gray-600 pt-4">
-                © {new Date().getFullYear()} Hommies Swap. All rights reserved.
+                © {new Date().getFullYear()} Hommies Swap.
             </div>
         </footer>
     );
