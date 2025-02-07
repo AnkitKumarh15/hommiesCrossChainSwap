@@ -5,7 +5,7 @@ import eth from '../../public/ETH.png';
 import sol from '../../public/SOL.png';
 import convert from '../../public/convert.png';
 import { WalletContext } from "./ConnectWallet/WalletContext"
-
+import toast, { Toaster } from "react-hot-toast";
 
 
 const Swap = () => {
