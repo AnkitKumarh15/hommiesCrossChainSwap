@@ -164,11 +164,11 @@ const Swap = () => {
                     SWAP
                 </button>
 
-                { account && (
+                {/* { account && (
                     <span className="bg-gray-500 px-4 py-2 text-base font-semibold rounded-xl">
                     {account.slice(0, 6)}...{account.slice(-4)}
                 </span>)
-                }
+                } */}
                 
                 
 
